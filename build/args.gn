@@ -1,8 +1,24 @@
+google_api_key = "AIzaSyBs39bjCwGxGXF3UoV9gtk_Jhjt_8uPuT0"
+# Release
 is_debug = false
 symbol_level = 0
-is_component_build = true
+
+# 开发建议 true，最终发布建议 false
+is_component_build = false
+
 target_cpu = "x64"
+
+# 编译优化
 use_lld = true
 cc_wrapper = "ccache"
+
+# 视频兼容
 proprietary_codecs = true
 ffmpeg_branding = "Chrome"
+
+# 关闭废弃/非必要功能
+enable_nacl = false
+
+# 如果你确定不需要
+enable_print_preview = false
+enable_basic_printing = false
